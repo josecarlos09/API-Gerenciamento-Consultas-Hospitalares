@@ -1,0 +1,906 @@
+{
+	"info": {
+		"_postman_id": "13c3b136-2cc6-49e4-9ed1-fa3adf2f83a3",
+		"name": "API CLINICA HOSPITALAR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39714074"
+	},
+	"item": [
+		{
+			"name": "USUARIO",
+			"item": [
+				{
+					"name": "POST USUARIO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/sistema-vendas-usuario/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"sistema-vendas-usuario",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL USUARIO",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE USUARIO",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE USUARIO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/sistema-vendas-usuario/usuario/ee2d72d4-fa6d-4063-a0a9-ccb65ba318a4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"sistema-vendas-usuario",
+								"usuario",
+								"ee2d72d4-fa6d-4063-a0a9-ccb65ba318a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USUARIO PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\":\"Marcos Souza\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/usuario/ec1d179c-d857-4cc2-afcf-3e7382462364/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"usuario",
+								"ec1d179c-d857-4cc2-afcf-3e7382462364",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT SENHA",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/usuario/de4a21be-2509-4f08-888f-85932a393454/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"usuario",
+								"de4a21be-2509-4f08-888f-85932a393454",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT STATUS",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"statusUsuario\":\"INATIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/usuario/de4a21be-2509-4f08-888f-85932a393454/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"usuario",
+								"de4a21be-2509-4f08-888f-85932a393454",
+								"status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PACIENTE",
+			"item": [
+				{
+					"name": "POST PACIENTE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeCompleto\": \"Teste\",\r\n    \"cpf\": \"12355691001\",\r\n    \"rg\": \"143452089\",\r\n    \"telefoneCelular\": \"12365078\",\r\n    \"genero\": \"MASCULINO\",\r\n    \"dataNascimento\": \"2000-01-02\",\r\n    \"cns\": \"123456081812\",\r\n    \"tipoSanguineo\": \"A+\",\r\n    \"nacionalidade\": \"Brasileiro\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/paciente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"paciente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL PACIENTE",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE PACIENTE",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE ONE PACIENTE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/paciente/5ab85835-2741-422e-948e-a1cbb98c4c16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"paciente",
+								"5ab85835-2741-422e-948e-a1cbb98c4c16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT PACIENTE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"telefoneCelular\":\"2000-01-02\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/paciente/5ab85835-2741-422e-948e-a1cbb98c4c16/paciente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"paciente",
+								"5ab85835-2741-422e-948e-a1cbb98c4c16",
+								"paciente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT STATUS PACIENTE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"statusPaciente\":\"FALECIDO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/paciente/26998406-cacb-465d-b0a1-fcefc83bb9a3/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"paciente",
+								"26998406-cacb-465d-b0a1-fcefc83bb9a3",
+								"status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FUNCIONARIO",
+			"item": [
+				{
+					"name": "POST FUNCIONARIO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nomeCompleto\": \"Joãoaa da Silva\",\r\n  \"cpf\": \"12345671901\",\r\n  \"rg\": \"123856799\",\r\n  \"genero\": \"MASCULINO\",\r\n  \"dataNascimento\": \"1990-05-15\",\r\n  \"telefone\": \"(81) 99999-9999\",\r\n  \"funcao\": \"MEDICO\",\r\n  \"especialidade\": \"CARDIOLOGIA\",\r\n  \"statusFuncionario\": \"ATIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/funcionario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"funcionario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL FUNCIONARIO",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE FUNCIONARIO",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE FUNCIONARIO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/funcionario/1e5e7798-321a-4723-aa00-1d0b8d91c8b4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"funcionario",
+								"1e5e7798-321a-4723-aa00-1d0b8d91c8b4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT FUNCIONARIO",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"telefone\":\"1223233\",\r\n   \"funcao\":\"MEDICO\",\r\n   \"especialidade\": \"CARDIOLOGIA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/funcionario/5d06dc2f-8d4a-4610-a288-30b3bea811c5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"funcionario",
+								"5d06dc2f-8d4a-4610-a288-30b3bea811c5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT STATUS FUNCIONARIO",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"statusFuncionario\":\"INATIVO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/funcionario/37dc52aa-41ba-45c8-a7d5-5df4d4666649/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"funcionario",
+								"37dc52aa-41ba-45c8-a7d5-5df4d4666649",
+								"status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ENDERECO",
+			"item": [
+				{
+					"name": "POST ENDERECO FUNCIONARIO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pais\":\"Brazil\",\r\n    \"uf\":\"PE\",\r\n    \"cidade\":\"Caruaru\",\r\n    \"bairro\":\"Santa Rosa\",\r\n    \"rua\":\"Alfredo Pinto\",\r\n    \"numeroCasa\":\"201\",\r\n    \"complemento\":\"Casa\",\r\n    \"cep\":\"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/endereco/5d06dc2f-8d4a-4610-a288-30b3bea811c5/funcionario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"endereco",
+								"5d06dc2f-8d4a-4610-a288-30b3bea811c5",
+								"funcionario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST ENDERECO PACIENTE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pais\":\"Brazil\",\r\n    \"uf\":\"PE\",\r\n    \"cidade\":\"Caruaru\",\r\n    \"bairro\":\"Santa Rosa\",\r\n    \"rua\":\"Alfredo Pinto\",\r\n    \"numeroCasa\":\"201\",\r\n    \"complemento\":\"Casa\",\r\n    \"cep\":\"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/endereco/90973c51-79a2-430e-9fd4-10e6be2d9d3d/paciente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"endereco",
+								"90973c51-79a2-430e-9fd4-10e6be2d9d3d",
+								"paciente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL ENDERECO",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE ENDERECO",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GET CEP",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE ENDERECO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/endereco/cd2d6391-fa47-4542-8888-e7f02dcd0692",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"endereco",
+								"cd2d6391-fa47-4542-8888-e7f02dcd0692"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LOGIN",
+			"item": [
+				{
+					"name": "TOKEN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\":\"\",\r\n    \"senha\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MEDICO",
+			"item": [
+				{
+					"name": "POST MEDICO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"crm\":\"12345970\",\r\n    \"cns\":\"1238567090\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/medico/registro/36fdc4a7-2acd-4bbb-ba3d-146cb04179b5/funcionario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"medico",
+								"registro",
+								"36fdc4a7-2acd-4bbb-ba3d-146cb04179b5",
+								"funcionario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL MEDICO",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE MEDICO",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE MEDICO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/medico/36fdc4a7-2acd-4bbb-ba3d-146cb04179b5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"medico",
+								"36fdc4a7-2acd-4bbb-ba3d-146cb04179b5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT MEDICO",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"statusMedico\":\"ATENDENDO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/medico/34073249-0441-4450-8d44-ba8d58ce9882/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"medico",
+								"34073249-0441-4450-8d44-ba8d58ce9882",
+								"status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CONSULTA",
+			"item": [
+				{
+					"name": "POST CONSULTA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/funcionario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"funcionario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL CONSULTA",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "PUT FINALIZAR CONSULTA",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"statusAtendimento\":\"REALIZADO\",\r\n    \"observacao\":\"TESTE\",\r\n    \"resultadoConsulta\":\"TESTE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/consulta/994d0a9d-3be6-4f0b-a070-6f702b5e25b2/atendido",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"consulta",
+								"994d0a9d-3be6-4f0b-a070-6f702b5e25b2",
+								"atendido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE CONSULTA",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE CONSULTA",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/consulta/5177b8fa-1628-4325-b713-275259901117",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"consulta",
+								"5177b8fa-1628-4325-b713-275259901117"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT CONSULTA",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"valorConsulta\":100.20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/consulta/4a4bf652-359d-4b91-9390-031f9528db90/consulta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"consulta",
+								"4a4bf652-359d-4b91-9390-031f9528db90",
+								"consulta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CLINICA",
+			"item": [
+				{
+					"name": "POST CLINICA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\":\"TESTANDO UM DOIS\",\r\n    \"cnpj\":\"12345678901234\",\r\n    \"telefone\":\"1234567890\",\r\n    \"email\":\"josecarlos@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/clinica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"clinica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL CLINICA",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GET ON CLINICA",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "PUT CLINICA",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\":\"Teste 02\",\r\n    \"email\":\"Ana@gmail.com\",\r\n    \"telefone\":\"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/clinica/d59f629e-6f24-4a1d-8e5c-55aad5d01289",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"clinica",
+								"d59f629e-6f24-4a1d-8e5c-55aad5d01289"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE CLINICA",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/clinica_hospitalar/clinica/d59f629e-6f24-4a1d-8e5c-55aad5d01289",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"clinica_hospitalar",
+								"clinica",
+								"d59f629e-6f24-4a1d-8e5c-55aad5d01289"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
