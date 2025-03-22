@@ -1,0 +1,62 @@
+server:
+  port: 8087  # Define a porta na qual a aplicação será executada
+  servlet:
+    context-path: '/clinica_hospitalar/'  # Define o caminho base da aplicação
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs  # Especifica o caminho onde a documentação em formato JSON será exposta
+  swagger-ui:
+    path: /swagger-ui/index.html  # Define o caminho para acessar a interface do Swagger UI
+
+# Configuração da conexão com o banco de dados PostgreSQL
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/clinica_hospitalar  # URL de conexão com o banco de dados PostgreSQL
+    username: postgres  # Usuário do banco de dados
+    password: Postgre  # Senha do banco de dados
+    driver-class-name: org.postgresql.Driver  # Define o driver JDBC para PostgreSQL
+    hikari:
+      maximum-pool-size: 10  # Define o tamanho máximo do pool de conexões
+
+  jpa: # Configurações do JPA (Java Persistence API)
+    open-in-view: false  # Desativa a estratégia Open-in-View para evitar problemas de Lazy Loading
+    hibernate: # Configurações do Hibernate
+      ddl-auto: update  # Define a estratégia de atualização automática do esquema do banco de dados
+      dialect: org.hibernate.dialect.PostgreSQLDialect  # Define o dialeto específico para PostgreSQL
+      jdbc:
+        lob.non-contextual-creation: true  # Evita problemas de criação de objetos LOB (Large Objects) no banco de dados
+
+    properties: # Propriedades adicionais do JPA
+      hibernate:
+        show_sql: true  # Exibe no console os comandos SQL gerados pelo Hibernate
+        format_sql: true  # Formata os comandos SQL para facilitar a leitura
+  flyway:
+    enabled: true  # Ativa o Flyway para executar as migrações do banco de dados ao iniciar a aplicação.
+    locations: classpath:db/migration  # Define o local onde os arquivos de migração SQL estão armazenados. O Flyway buscará nesse diretório (`src/main/resources/db/migration`).
+    baseline-on-migrate: true  # Se o banco já contém tabelas, cria um ponto de partida (baseline) para evitar erros de migração ao rodar em um banco de dados já existente.
+
+  # Exibir logs coloridos no console
+  output:
+    ansi:
+      enabled: Always
+
+    SQL: debug  # Define o nível de log do SQL como debug, exibindo as consultas geradas
+    type:
+      descriptor:
+        sql:
+          BasicBinder: trace  # Exibe os parâmetros que são inseridos no SQL
+
+# Configuração dos logs da aplicação
+logging:
+  level:
+    plataforma_ead: TRACE  # Define o nível de log TRACE para a plataforma EAD
+    root: INFO  # Define o nível de log padrão como INFO
+    org.springframework.web: DEBUG  # Ativa logs detalhados para requisições web do Spring
+    org.springframework.security: DEBUG  # Ativa logs detalhados para a segurança do Spring
+    org.hibernate: INFO  # Define logs do Hibernate no nível INFO
+
+# Configuração de autorização via JWT
+autorizacao:
+  jwtSecret: KtMyJNrMuVqahZMIQRKTaSagmZz4MjwXy+3D0awL1XCe0MMhXawXgTIteLVqfXVyjCDJk4HgJf0189g8Steq509KPrBn2FlGc+6plqti0d4=
+  jwtExpirationMs: 14400000  # Define o tempo de expiração do token JWT (4 horas)
