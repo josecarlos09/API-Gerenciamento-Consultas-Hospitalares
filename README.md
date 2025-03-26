@@ -1,5 +1,5 @@
 
-# API para Gerenciamento de Agendamentos de Consultas Hospitalares
+# API para Gerenciamento de Agendamentos de Consultas Médicas
 A API da **Technology Soluções Empresariais** é responsável por gerenciar o agendamento de consultas hospitalares. O sistema permite que médicos vinculados a uma clínica realizem atendimentos a pacientes previamente cadastrados, garantindo um controle eficiente das consultas. Além disso, a API possui autenticação baseada em JWT e um controle de acessos conforme os diferentes perfis de usuários.
 
 ## Documentação da API com Swagger
